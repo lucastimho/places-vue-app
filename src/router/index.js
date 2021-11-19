@@ -5,6 +5,9 @@ import PlacesEdit from "../views/PlacesEdit.vue";
 import PlacesIndex from "../views/PlacesIndex.vue";
 import PlacesNew from "../views/PlacesNew.vue";
 import PlacesShow from "../views/PlacesShow.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 
 Vue.use(VueRouter);
 
@@ -41,6 +44,21 @@ const routes = [
     path: "/places/:id",
     name: "PlacesShow",
     component: PlacesShow,
+  },
+  {
+    path: "/signup",
+    name: "Signup",
+    component: Signup,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+  {
+    path: "/logout",
+    name: "Logout",
+    component: Logout,
   },
 ];
 
